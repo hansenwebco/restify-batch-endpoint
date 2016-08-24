@@ -13,5 +13,8 @@
     "requests"
   ],
   "author": "Mark Hansen",
-  "license": "WTFPL"
+  "license": "WTFPL",
+  "dependencies": {
+    "async": "^2.0.1"
+  }
 }
