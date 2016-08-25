@@ -2,7 +2,7 @@
   "name": "restify-batch-endpoint",
   "version": "1.0.0",
   "description": "Resitfy middleware to allow for batching requests.",
-  "main": "index.js",
+  "main": "./lib/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -15,6 +15,7 @@
   "author": "Mark Hansen",
   "license": "WTFPL",
   "dependencies": {
-    "async": "^2.0.1"
+    "async": "^2.0.1",
+    "restify": "^4.1.1"
   }
 }
