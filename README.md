@@ -1,4 +1,6 @@
 # restify-batch-endpoint
+![dependencies](https://david-dm.org/hansenwebco/restify-batch-endpoint.svg)
+[![npm version](https://badge.fury.io/js/restify-batch-endpoint.svg)](https://badge.fury.io/js/restify-batch-endpoint)
 
 Restify Batch Endpoint allows Restify users to group several requests into a single response.  Currently the module suppots only **GET** Requests against endpoints.  The code as loosly based on https://github.com/AnyFetch/batch-endpoint which handled the requests and responses in a differnt manner.
 

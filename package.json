@@ -1,7 +1,7 @@
 {
     "name": "restify-batch-endpoint",
-    "version": "1.0.1",
-    "description": "Resitfy middleware to allow for batching requests.",
+    "version": "1.0.3",
+    "description": "Resitfy module to allow for batching requests.",
     "main": "./lib/index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
