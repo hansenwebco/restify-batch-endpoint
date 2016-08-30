@@ -7,6 +7,7 @@ Restify Batch Endpoint allows Restify users to group several requests into a sin
 ## Installation
 ```sh
 npm install restify-batch-endpoint
+npm update
 ```
 
 ## Configuration
