@@ -1,25 +1,28 @@
 {
-    "name": "restify-batch-endpoint",
-    "version": "1.0.3",
-    "description": "Resitfy module to allow for batching requests.",
-    "main": "./lib/index.js",
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "keywords": [
-        "restify",
-        "middleware",
-        "batch",
-        "requests"
-    ],
-    "author": "Mark Hansen",
-    "license": "WTFPL",
-    "dependencies": {
-        "async": "^2.0.1",
-        "restify": "^4.1.1"
-    },
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/hansenwebco/restify-batch-endpoint.git"
-    }
+  "name": "restify-batch-endpoint",
+  "version": "1.0.3",
+  "description": "Resitfy module to allow for batching requests.",
+  "main": "./lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "restify",
+    "middleware",
+    "batch",
+    "requests"
+  ],
+  "author": "Mark Hansen",
+  "license": "WTFPL",
+  "dependencies": {
+    "async": "^2.0.1",
+    "body-parser": "^1.15.2",
+    "chai": "^3.5.0",
+    "restify": "^4.1.1",
+    "supertest": "^2.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hansenwebco/restify-batch-endpoint.git"
+  }
 }
