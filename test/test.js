@@ -3,7 +3,7 @@ var expect = require("chai").expect;
 var should = require("chai").should;
 var supertest = require("supertest");
 var api = supertest("http://localhost:3000");
-
+var restServer;
 describe('Mocha Test Suite', function() {
 
     describe('Starting up Restify Server', function() {
@@ -15,14 +15,14 @@ describe('Mocha Test Suite', function() {
         });
 
         describe('Validate Testing End Points', function() {
-            it('API Route1 Should return a 200', function() {
-                //supertest(server).
-                api.get("/route1")
+            it('API Route1 Should return a 200', function(done) {
+                //supertest(server)
+                api.get("/rout1")
                     .set('Accept', 'application/json')
                     .expect(function(res) {
                       res.body.use = 'John Smith';
                     });
-
+                    done();
             });
             it('API Route2 Should return a 200', function() {
                 api.get("/route2")
