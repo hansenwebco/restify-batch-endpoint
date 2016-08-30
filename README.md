@@ -2,7 +2,7 @@
 ![dependencies](https://david-dm.org/hansenwebco/restify-batch-endpoint.svg)
 [![npm version](https://badge.fury.io/js/restify-batch-endpoint.svg)](https://badge.fury.io/js/restify-batch-endpoint)
 
-Restify Batch Endpoint allows Restify users to group several requests into a single response.  Currently the module suppots only **GET** Requests against endpoints.  The code as loosly based on https://github.com/AnyFetch/batch-endpoint which handled the requests and responses in a differnt manner.
+Restify Batch Endpoint allows Restify users to group several requests into a single response.  Currently the module supports only **GET** Requests against endpoints.  The code as loosly based on https://github.com/AnyFetch/batch-endpoint which handled the requests and responses in a different manner.
 
 ## Installation
 ```sh
@@ -32,7 +32,7 @@ server.post('/batch', batchEndpoint.batchProcess);
 ```
 
 ## Using Your New Route
-The module will make requests against the same IP and Port in which your Restify server has been created.  To receive a a combined reponse make a **POST** to the route you configured above ( In this example above ht&#8203;ttp://server:port/batch ) You should post a **JSON** object with a parameter name of **BATCH**.
+The module will make requests against the same IP and Port in which your Restify server has been created.  To receive a a combined response make a **POST** to the route you configured above ( In this example above ht&#8203;ttp://server:port/batch ).
 
 The format is as follows, where **requests** is list of end points where **endpoint** is the Restify route you wish to call, and **reference** is the associated object that will be returned in the response.
 
