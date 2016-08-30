@@ -19,7 +19,9 @@ describe('Mocha Test Suite', function() {
                     .set('Accept', 'application/json')
                     .expect(200)
                     .end(function(err, res) {
-                        done(err);
+                        if (err) throw err;
+                        expect(res.body).to.have.property("user");
+                        done();
                     });
             });
 
@@ -28,7 +30,9 @@ describe('Mocha Test Suite', function() {
                     .set('Accept', 'application/json')
                     .expect(200)
                     .end(function(err, res) {
-                        done(err);
+                        if (err) throw err;
+                        expect(res.body).to.have.property("beers");
+                        done();
                     });
             });
         });
