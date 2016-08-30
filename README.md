@@ -2,7 +2,7 @@
 ![dependencies](https://david-dm.org/hansenwebco/restify-batch-endpoint.svg)
 [![npm version](https://badge.fury.io/js/restify-batch-endpoint.svg)](https://badge.fury.io/js/restify-batch-endpoint)
 
-Restify Batch Endpoint allows Restify users to group several requests into a single response.  Currently the module supports only **GET** Requests against endpoints.  The code as loosly based on https://github.com/AnyFetch/batch-endpoint which handled the requests and responses in a different manner.
+Restify Batch Endpoint allows Restify users to group several requests into a single response.  Currently the module supports only **GET** Requests against endpoints.  The code as loosly based on "batch-endpoint" which handled the requests and responses in a different manner.
 
 ## Installation
 ```sh
@@ -13,20 +13,20 @@ npm install restify-batch-endpoint
 
 To use the module you will want to configure a route on your API that handles a **POST** and routes the request to the restify-batch-endpoint.
 
-**Require the Plugin**
+### Require the Plugin
 ```sh
 var batchEndpoint = require('restify-batch-endpoint');
 ```
 
-**Configure the Endpoint**
-Where **server** is your restify reference.
+### Configure the Endpoint
+Where **server** is your restify instance.
 ```sh
 batchEndpoint.configureEndPoint(server,{
         "maxRequests": 9
         }
     );
 ```
-**Configure the Route**
+### Configure the Route
 ```sh
 server.post('/batch', batchEndpoint.batchProcess);
 ```
@@ -99,3 +99,14 @@ Where possible errors are passed back in the response using the Restiy Error obj
   "requestTimeMillis": 217
 }
 ```
+
+## Testing
+Tests are contained in the **test** folder and utilize Mocha, Chai, and Supertest.  You will need to install Mocha globally to run tests:
+```sh
+npm install -g mocha
+```
+by simply typing
+```sh
+mocha
+```
+in your console within the project folder.
