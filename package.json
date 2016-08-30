@@ -1,6 +1,6 @@
 {
   "name": "restify-batch-endpoint",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Resitfy module to allow for batching requests.",
   "main": "./lib/index.js",
   "scripts": {
